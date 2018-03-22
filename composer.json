@@ -1,5 +1,6 @@
 {
   "name": "desbiger/debugger",
+  "description": "debugger for php applications",
   "autoload": {
     "psr-4": {
       "Desbiger\\": "src"
