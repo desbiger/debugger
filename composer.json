@@ -1,0 +1,8 @@
+{
+  "name": "desbiger/debuger",
+  "autoload": {
+    "psr-4": {
+      "Desbiger\\": "src"
+    }
+  }
+}
