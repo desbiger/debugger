@@ -3,10 +3,11 @@
 Пример использования:
 
 ```php
+<?
 $checker = \Desbiger\TimeChecker::init();
 
 //код
-<?
+
 
 $checker->getNowInterval(true); // выведет сколько прошло милисекунд с момента инициализации класса
 
