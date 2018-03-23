@@ -17,7 +17,7 @@ class TimeChecker {
      */
     public function __construct()
     {
-        $this->startTime = $this->point = microtime();
+        $this->startTime = $this->point = microtime(true);
     }
 
 
@@ -27,16 +27,14 @@ class TimeChecker {
     public function getNowInterval($with_before_point_interval = false)
     {
 
-
-        $interval = microtime() - $this->startTime;
-
+        $interval = (string)(microtime(true) - $this->startTime);
         if ($with_before_point_interval) {
-            $interval .= " | before point interval : " . microtime() - $this->point;
+            $interval .= " | before point interval : " . (string)(microtime(true) - $this->point);
         }
 
-        $this->point = microtime();
+        $this->point = microtime(true);
 
-        echo $interval;
+        return $interval;
     }
 
 
