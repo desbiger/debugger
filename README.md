@@ -6,7 +6,7 @@
 $checker = \Desbiger\TimeChecker::init();
 
 //код
-
+<?php
 $checker->getNowInterval(true) // выведет сколько прошло милисекунд с момента инициализации класса
 
 //код
