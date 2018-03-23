@@ -1,6 +1,7 @@
 {
   "name": "desbiger/debugger",
   "description": "debugger for php applications",
+  "license": "MIT",
   "autoload": {
     "psr-4": {
       "Desbiger\\": "src"
